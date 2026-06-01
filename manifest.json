@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "itslearning Auto Login",
+  "version": "1.0",
+  "description": "Automatically logs into itslearning using saved credentials.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.itslearning.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.itslearning.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

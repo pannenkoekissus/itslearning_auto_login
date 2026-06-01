@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>itslearning Auto Login</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>itslearning Auto Login</h2>
+    <p class="subtitle">Save your credentials to automatically log in.</p>
+    
+    <div class="form-group">
+      <label for="username">Username / Email</label>
+      <input type="text" id="username" placeholder="Enter your username">
+    </div>
+    
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <div class="form-group">
+      <label class="checkbox-label">
+        <input type="checkbox" id="autoSubmit" checked>
+        Automatically click login
+      </label>
+    </div>
+    
+    <button id="saveBtn">Save Credentials</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
